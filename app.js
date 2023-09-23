@@ -121,9 +121,10 @@ function gameover(){
     gameoveraudio.play();
     if (team1Score > team2Score){
         alert("INDIA WINS!")
-    }else if(team1Score > team2Score){
+    }else if(team2Score > team1Score){
         alert("PAK WINS!")
-    } else{
+    }
+    else{
         alert("Its a tie")
     }    
     document.querySelectorAll(".ball").forEach(e=> {
